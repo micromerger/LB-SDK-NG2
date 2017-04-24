@@ -10,7 +10,8 @@
       "loopback/common/mixins",
       "loopback/server/mixins",
       "../common/mixins",
-      "./mixins"
+      "./mixins",
+      "../node_modules/@mean-expert/loopback-component-realtime/dist/mixins"
     ]
   },
   "User": {
@@ -34,5 +35,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "task": {
+    "dataSource": "db",
+    "public": true
   }
 }
