@@ -50,6 +50,14 @@ import { SocketConnection } from './sockets/socket.connections';
 import { RealTime } from './services/core/real.time';
 import { UserApi } from './services/custom/User';
 import { TaskApi } from './services/custom/Task';
+import { AircraftApi } from './services/custom/Aircraft';
+import { SeatApi } from './services/custom/Seat';
+import { AirportApi } from './services/custom/Airport';
+import { FlightApi } from './services/custom/Flight';
+import { Ticket_flightApi } from './services/custom/Ticket_flight';
+import { BookingApi } from './services/custom/Booking';
+import { BoardingApi } from './services/custom/Boarding';
+import { TicketApi } from './services/custom/Ticket';
 /**
 * @module SDKBrowserModule
 * @description
@@ -83,6 +91,14 @@ export class SDKBrowserModule {
         RealTime,
         UserApi,
         TaskApi,
+        AircraftApi,
+        SeatApi,
+        AirportApi,
+        FlightApi,
+        Ticket_flightApi,
+        BookingApi,
+        BoardingApi,
+        TicketApi,
         internalStorageProvider,
         { provide: SDKStorage, useClass: StorageBrowser },
         { provide: SocketDriver, useClass: SocketBrowser }

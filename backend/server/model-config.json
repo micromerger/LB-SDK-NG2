@@ -11,7 +11,9 @@
       "loopback/server/mixins",
       "../common/mixins",
       "./mixins",
-      "../node_modules/@mean-expert/loopback-component-realtime/dist/mixins"
+      "../node_modules/@mean-expert/loopback-stats-mixin/dist",
+      "../node_modules/@mean-expert/loopback-component-realtime/dist/mixins",
+      "../node_modules/loopback-ds-timestamp-mixin"
     ]
   },
   "User": {
@@ -37,6 +39,38 @@
     "public": false
   },
   "task": {
+    "dataSource": "db",
+    "public": true
+  },
+  "aircraft": {
+    "dataSource": "db",
+    "public": true
+  },
+  "seat": {
+    "dataSource": "db",
+    "public": true
+  },
+  "airport": {
+    "dataSource": "db",
+    "public": true
+  },
+  "flight": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ticket_flight": {
+    "dataSource": "db",
+    "public": true
+  },
+  "booking": {
+    "dataSource": "db",
+    "public": true
+  },
+  "boarding": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ticket": {
     "dataSource": "db",
     "public": true
   }

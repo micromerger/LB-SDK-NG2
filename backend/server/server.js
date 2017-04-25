@@ -4,7 +4,11 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
+
+//app.use(cookieParser());
+
 app.start = function() {
+  // start the web server
   var server = app.listen(function() {
     app.emit('started', server);
     var baseUrl = app.get('url').replace(/\/$/, '');
@@ -16,6 +20,7 @@ app.start = function() {
   });
   return server;
 };
+
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.

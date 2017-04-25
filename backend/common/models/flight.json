@@ -1,0 +1,36 @@
+{
+  "name": "flight",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "flight_no": {
+      "type": "string",
+      "required": true
+    },
+    "scheduled_departure": {
+      "type": "date",
+      "required": true
+    },
+    "scheduled_arrival": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tickets": {
+      "type": "hasMany",
+      "model": "ticket",
+      "foreignKey": "",
+      "through": "ticket_flight"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

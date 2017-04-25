@@ -1,0 +1,31 @@
+{
+  "name": "ticket_flight",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fare_condition": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ticket": {
+      "type": "belongsTo",
+      "model": "ticket",
+      "foreignKey": ""
+    },
+    "flight": {
+      "type": "belongsTo",
+      "model": "flight",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

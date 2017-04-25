@@ -5,9 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SDKBrowserModule } from './shared/sdk';
+import { AircraftsComponent } from './my-app-components/aircrafts/aircrafts.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AircraftsComponent
   ],
   imports: [
     BrowserModule,

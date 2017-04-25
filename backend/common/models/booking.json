@@ -1,0 +1,26 @@
+{
+  "name": "booking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "book_date": {
+      "type": "date"
+    },
+    "total_amount": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tickets": {
+      "type": "hasMany",
+      "model": "ticket",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

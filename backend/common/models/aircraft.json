@@ -1,0 +1,32 @@
+{
+  "name": "aircraft",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "range": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "seats": {
+      "type": "hasMany",
+      "model": "seat",
+      "foreignKey": ""
+    },
+    "flights": {
+      "type": "hasMany",
+      "model": "flight",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
